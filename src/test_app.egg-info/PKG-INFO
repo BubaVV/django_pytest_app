@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: test-app
+Version: 0.1.0
+Summary: An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
+Home-page: https://www.iqpp.de
+Author: Kai Diefenbach
+Author-email: kai.diefenbach@iqpp.de
+License: BSD 2-Clause License
+Description-Content-Type: UNKNOWN
+Description: Simple app to show case django with pytest and selenium.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
