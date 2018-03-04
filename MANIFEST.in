@@ -1,4 +1,4 @@
-include README.txt
+include *.rst
 recursive-include docs *
 recursive-include test_app/static *
 recursive-include test_app/templates *

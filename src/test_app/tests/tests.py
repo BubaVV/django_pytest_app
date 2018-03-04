@@ -9,25 +9,25 @@ from django.urls import reverse
 
 import pytest
 
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+# from selenium import webdriver
+# from selenium.webdriver.common.keys import Keys
 
 from test_app.models import Product
 
 
-@pytest.fixture
-def product():
-    return Product.objects.create(name='Hose')
+# @pytest.fixture
+# def product():
+#     return Product.objects.create(name='Hose')
 
 
-@pytest.fixture
-def browser(request):
-    def finalizer():
-        driver.close()
-    request.addfinalizer(finalizer)
+# @pytest.fixture
+# def browser(request):
+#     def finalizer():
+#         driver.close()
+#     request.addfinalizer(finalizer)
 
-    driver = webdriver.Chrome()
-    return driver
+#     driver = webdriver.Chrome()
+#     return driver
 
 
 @pytest.mark.django_db()

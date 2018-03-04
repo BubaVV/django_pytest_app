@@ -22,6 +22,16 @@ def read(*names, **kwargs):
     ).read()
 
 
+install_requires = [
+    # 'django>=2,<2.1',
+]
+
+test_requires = [
+    'pytest==3.4.1',
+    'pytest-django==3.1.2',
+    'selenium',
+]
+
 setup(
     name='test_app',
     version='0.1.0',
@@ -55,8 +65,10 @@ setup(
     ],
     keywords=[
     ],
-    install_requires=[
-    ],
+    install_requires=install_requires,
+    test_require= {
+        'test': test_requires,
+    },
     extras_require={
     },
     entry_points={
