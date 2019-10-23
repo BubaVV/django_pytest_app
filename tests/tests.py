@@ -11,8 +11,12 @@ import pytest
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
+
 
 from test_app.models import Product
+
+
 
 
 @pytest.fixture
@@ -26,7 +30,10 @@ def browser(request):
         driver.close()
     request.addfinalizer(finalizer)
 
-    driver = webdriver.Chrome()
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
+
     return driver
 
 
