@@ -1,11 +1,12 @@
 import unittest
 import time
 
-import config
+
+from oslo_config import cfg as CONF
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-CONF = config
+# CONF = config
 
 class LogInActions(unittest.TestCase):
 
