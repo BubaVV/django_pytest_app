@@ -1,0 +1,9 @@
+*.pyc
+.stestr.conf
+*.log
+.venv
+__pycache__/
+.tox/
+.stestr/
+venv/
+
